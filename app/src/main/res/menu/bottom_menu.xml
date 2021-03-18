@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/ic_compass_1_"
+        android:title="Kiblat"
+        app:showAsAction="withText" />
+    <item
+        android:icon="@drawable/ic_clock_2_"
+        android:title="Sholat" />
+    <item
+        android:icon="@drawable/ic_quran_1_"
+        android:title="Al-Quran" />
+    <item
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="Lainnya" />
+</menu>
