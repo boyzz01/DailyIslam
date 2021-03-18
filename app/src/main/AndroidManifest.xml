@@ -15,17 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyIslam">
+        <activity android:name=".jadwal.Jadwal">
+
+        </activity>
         <activity android:name=".kiblat.Kiblat">
+
+        </activity>
+        <activity android:name=".quran.QuranView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".quran.QuranView">
-
-        </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

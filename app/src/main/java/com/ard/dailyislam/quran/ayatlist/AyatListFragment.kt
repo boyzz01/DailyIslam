@@ -12,6 +12,7 @@ import com.ard.dailyislam.R
 import com.ard.dailyislam.quran.model.ayat.Ayat
 import com.ard.dailyislam.quran.repository.AyatRepository
 import kotlinx.android.synthetic.main.fragment_ayat.*
+import kotlinx.android.synthetic.main.toolbar_surah.*
 
 
 class AyatListFragment : Fragment() {
@@ -34,6 +35,11 @@ class AyatListFragment : Fragment() {
         ayatList.adapter = adapter
 
 
+        namaTxt.text = surah!!.nama
+
+        val type: String = surah!!.type.substring(0, 1).toUpperCase() + surah!!.type.substring(1)
+
+        tempatTxt.text = type
         val factory = AyatListFactory(AyatRepository.instance)
         vm = ViewModelProviders.of(this, factory).get(AyatListViewModel::class.java).apply {
             viewState.observe(viewLifecycleOwner, Observer(this@AyatListFragment::handleState))
@@ -57,14 +63,6 @@ class AyatListFragment : Fragment() {
         adapter.updateData(no,data)
     }
 
-//    private fun showError(error: Exception) {
-//        tvSetError.text = error.message
-//        tvSetError.visibility = View.VISIBLE
-//        rvSet.visibility = View.GONE
-//    }
-//
-//    private fun toggleLoading(loading: Boolean) {
-//        srlSet.isRefreshing = loading
-//    }
+
 
 }
