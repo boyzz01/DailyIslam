@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#333232"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".main.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topView"
@@ -90,7 +90,7 @@
                 app:srcCompat="@drawable/ic_qibla" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/sholatIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:adjustViewBounds="true"
@@ -101,7 +101,7 @@
                 app:srcCompat="@drawable/ic_clock" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/quranIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:adjustViewBounds="false"
@@ -146,7 +146,7 @@
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toStartOf="@+id/divider"
                 app:layout_constraintStart_toEndOf="@+id/divider2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+                app:layout_constraintTop_toBottomOf="@+id/sholatIcon" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -155,9 +155,9 @@
                 android:layout_marginTop="8dp"
                 android:text="Al-Quran"
                 android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                app:layout_constraintStart_toStartOf="@+id/imageView10"
-                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+                app:layout_constraintEnd_toEndOf="@+id/quranIcon"
+                app:layout_constraintStart_toStartOf="@+id/quranIcon"
+                app:layout_constraintTop_toBottomOf="@+id/quranIcon" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -172,7 +172,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tanggalMasehi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -186,7 +186,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tanggalIslam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -195,10 +195,10 @@
             android:textColor="@color/white"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/tanggalMasehi" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textMenuju"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ashar"
@@ -236,12 +236,12 @@
             android:layout_height="wrap_content"
             android:text="Bosar Maligas"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+            app:layout_constraintBottom_toBottomOf="@+id/iconImsak"
+            app:layout_constraintStart_toEndOf="@+id/iconImsak"
+            app:layout_constraintTop_toTopOf="@+id/iconImsak" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iconAlarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -253,7 +253,7 @@
             app:tint="@color/white" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/iconImsak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"

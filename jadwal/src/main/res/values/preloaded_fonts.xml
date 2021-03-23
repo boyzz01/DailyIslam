@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alice</item>
+        <item>@font/anton</item>
+        <item>@font/bungee</item>
+        <item>@font/galada</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/nunito_sans_extralight</item>
+        <item>@font/ovo</item>
+        <item>@font/rammetto_one</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

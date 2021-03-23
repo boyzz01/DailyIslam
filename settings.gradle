@@ -1,2 +1,4 @@
+include ':jadwal'
+include ':quran'
 include ':app'
 rootProject.name = "DailyIslam"
